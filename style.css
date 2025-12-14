@@ -340,8 +340,35 @@ footer .socials a:hover {
     opacity: 0.7;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
+    
+    header {
+        flex-direction: column; 
+        padding: 15px 0;       
+        height: auto;          
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;       
+        flex-wrap: wrap;       
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 8px;   
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -351,11 +378,18 @@ footer .socials a:hover {
         height: 250px;
     }
     
-    header {
-        padding: 15px;
+    .hero {
+        flex-direction: column-reverse; 
+        text-align: center;
+        padding-top: 40px;
     }
     
-    nav ul li {
-        margin-left: 15px;
+    .hero-content {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+    
+    .cta-group {
+        justify-content: center;
     }
 }
